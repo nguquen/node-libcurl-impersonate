@@ -1,29 +1,30 @@
 {
-  "name": "node-libcurl",
-  "version": "2.3.4",
-  "description": "The fastest http(s) client (and much more) for Node.js - Node.js bindings for libcurl",
+  "name": "node-libcurl-impersonate",
+  "version": "2.3.5",
+  "description": "The fastest http(s) client (and much more) for Node.js - Node.js bindings for libcurl (curl-impersonate)",
   "keywords": [
     "node-curl",
     "curl",
     "libcurl",
     "node-libcurl",
     "axios",
-    "request"
+    "request",
+    "curl-impersonate"
   ],
-  "homepage": "https://github.com/JCMais/node-libcurl",
+  "homepage": "https://github.com/SwapnilSoni1999/node-libcurl",
   "bugs": {
-    "url": "https://github.com/JCMais/node-libcurl/issues"
+    "url": "https://github.com/SwapnilSoni1999/node-libcurl/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/JCMais/node-libcurl.git"
+    "url": "git://github.com/SwapnilSoni1999/node-libcurl.git"
   },
   "license": "MIT",
   "author": "Jonathan Cardoso <me@jonathancardoso.com>",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "binary": {
-    "module_name": "node_libcurl",
+    "module_name": "node_libcurl-impersonate",
     "module_path": "./lib/binding/",
     "remote_path": "./v{version}/",
     "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}-{libc}.tar.gz",

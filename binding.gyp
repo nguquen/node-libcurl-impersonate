@@ -13,7 +13,7 @@
     'node_libcurl_no_setlocale%': 'false',
     'node_libcurl_cpp_std%': '<!(node <(module_root_dir)/scripts/cpp-std.js)',
     'macos_universal_build%': 'false',
-    'module_name': 'curl-impersonate',
+    'module_name': 'node_libcurl-impersonate',
     'module_path': './lib/binding/'
   },
   'targets': [
