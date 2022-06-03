@@ -36,29 +36,8 @@ const run = async () => {
     blacklist: curlOptionsBlacklist,
   })
 
-  /**
-   * curl-impersonate new options
-   */
-  const curlImpersonateInfos = [
-    {
-      constantOriginal: 'CURLOPT_SSL_CERT_COMPRESSION',
-      constantName: 'SSL_COMPRESSION',
-      constantNameCamelCase: 'sslCompression',
-      description: '(curl-impersonate) SSL Compression type. Eg. brotli',
-      url:
-        'https://github.com/lwthiker/curl-impersonate/blob/main/chrome/patches/curl-impersonate.patch#L125',
-    },
-    {
-      constantOriginal: 'CURLOPT_SSL_ENABLE_ALPS',
-      constantName: 'SSL_ENABLE_ALPS',
-      constantNameCamelCase: 'sslEnableAlps',
-      description: '(curl-impersonate) TLS Client hello match Extension',
-      url:
-        'https://github.com/lwthiker/curl-impersonate/blob/main/chrome/patches/curl-impersonate.patch#L119',
-    },
-  ]
   await createConstantsFile({
-    constants: [...allowedCurlOptions, ...curlImpersonateInfos],
+    constants: allowedCurlOptions,
     variableName: 'CurlOption',
     filePath: curlOptionsFilePath,
     shouldGenerateCamelCaseMap: true,
@@ -102,6 +81,7 @@ const run = async () => {
       'REDIRECT',
     ],
   })
+
   await createConstantsFile({
     constants: allowedCurlInfos,
     variableName: 'CurlInfo',
