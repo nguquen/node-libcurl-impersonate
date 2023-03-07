@@ -9,7 +9,7 @@
     'curl_include_dirs%': '',
     'curl_libraries%': '',
     'curl_static_build%': 'true',
-    'curl_config_bin%': '/build/install/bin/curl-impersonate-chrome-config',
+    'curl_config_bin%': '/usr/local/bin/curl-impersonate-chrome-config',
     'node_libcurl_no_setlocale%': 'false',
     'node_libcurl_cpp_std%': '<!(node <(module_root_dir)/scripts/cpp-std.js)',
     'macos_universal_build%': 'false',
