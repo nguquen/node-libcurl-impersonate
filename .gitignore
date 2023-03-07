@@ -23,7 +23,6 @@ test/curl/upload.png
 coverage/
 
 # build
-dist
 build
 
 # Ts
